@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif,
+}
+
+ul {
+  list-style: none;
+}
+
+/* top links */
+a {
+  text-decoration: none;
+  color: rgb(77, 77, 255);
+  transition: all .2s ease-in-out;
+}
+a:hover {
+  color: blue
+}
+
+/* CONTAINERS */
+.container  {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+.sidebar {
+  min-height: 100vh;
+  width: 20%;
+  padding: 80px 20px;
+  position: fixed;
+}
+main {
+  min-height: 100vh;
+  width: 80%;
+}
+
+/* SIDEBAR */
+.profile-img {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: center;
+  background-color: black;
+  display: block;
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+.sidebar h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.sidebar p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebar li {
+  padding: 6px 0;
+}
+.sidebar a {
+  color: #333;
+  transition: all .2s ease-in-out;
+}
+.sidebar a:hover {
+  color: black;
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 80px 60px;
+  margin-left: 25%;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section hr {
+  margin-top: 60px;
+}
+
+.section-header {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* PUBLICATIONS */
+.publication {
+  margin-bottom: 40px;
+}
+.publication .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.publication .author {
+  margin-bottom: 12px;
+    
+}
+
+.publication .citation {
+  margin-bottom: 12px;
+}
+
+.publication-links {
+  display: flex;
+}
+
+.publication-links li {
+  margin-right: 6px;
+}
+
+/* Department Service*/
+.service {
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
