@@ -81,7 +81,7 @@ i {
 /* SIDEBAR / MAIN */
 .sidebar {
   min-height: 100vh;
-  width: 30%;
+  width: 26%;
   padding: 80px 20px;
   position: fixed;
 }
@@ -169,7 +169,7 @@ section hr {
 /* EACH SECTION HEADER */
 .section-header {
   font-family: 'Lora', serif;
-  font-size: 32px;
+  font-size: 31px;
   margin-bottom: 20px;
   font-weight: bold;
 }
