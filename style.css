@@ -176,7 +176,7 @@ section hr {
 
 .content p {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 /* PUBLICATIONS */
@@ -206,8 +206,34 @@ section hr {
   margin-right: 6px;
 }
 
+/* WORKSHOPS */
+.workshop {
+  margin-bottom: 40px;
+}
+.workshop .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.workshop .author {
+  margin-bottom: 12px;
+    
+}
+
+.workshop .citation {
+  margin-bottom: 12px;
+}
+
+.workshop-links {
+  display: flex;
+}
+
+.workshop-links li {
+  margin-right: 6px;
+
 /* DEPARTMENT SECTION */
-.service {
+.service{
   margin-bottom: 40px;
 }
 
@@ -219,9 +245,4 @@ section {
   font-size: 32px;
   margin-bottom: 20px;
   font-weight: bold;
-}
-
-.content p {
-  font-size: 16px;
-  margin-bottom: 6px;
 }
