@@ -1,21 +1,40 @@
 /* CSS RESET */
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
+/* Reset default list style */
 ul {
-  list-style: none;
+  list-style: none; /* Remove default list style */
+  padding-left: 0; /* Remove default padding */
 }
 
-/*  BODY: ENTIRE PAGE */
+/* Custom list styling */
+ul.custom-bullets {
+  list-style-type: disc; /* Shows bullets */
+  padding-left: 20px; /* Adds space on the left side for bullets */
+  margin-bottom: 20px; /* Adds space below the list */
+}
+
+
+
+/* Additional spacing for the introductory paragraph */
+.content p:first-of-type {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
+
+
+/* BODY: ENTIRE PAGE */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #1a1919;
+  background-color: #f9f9f9; /* Off-white background */
+  color: #000000; /* Black text */
 }
 
 /* ALL LINKS ON PAGE */
@@ -55,6 +74,8 @@ i {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+
 .flex-container {
   display: flex;
 }
@@ -187,22 +208,25 @@ section hr {
 }
 .publication .title {
   font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 18px; /* Reduced font size for title */
+  margin-bottom: 5px;
 }
 
 .publication .author {
-  margin-bottom: 12px;
-    
+  font-size: 16px; /* Reduced font size for author */
+  margin-bottom: 5px;
 }
 
 .publication .citation {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 
+/* Remove bullets from publication links */
 .publication-links {
-  display: flex;
+  list-style: none; /* Removes bullets */
+  padding-left: 0; /* Removes padding */
+  display: flex; /* Optional: if you want them to be in a row */
 }
 
 .publication-links li {
@@ -217,16 +241,17 @@ section hr {
 .workshop .title {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .workshop .author {
-  margin-bottom: 12px;
+  font-size: 16px; /* Reduced font size for author */
+  margin-bottom: 5px;
     
 }
 
 .workshop .citation {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .workshop-links {
@@ -251,3 +276,4 @@ section {
   margin-bottom: 20px;
   font-weight: bold;
 }
+
