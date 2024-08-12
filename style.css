@@ -258,10 +258,11 @@ section hr {
   display: flex;
 }
 
+
 .workshop-links li {
-  margin-right: 6px
-
-
+    margin-right: 6px;
+}
+  
 /* DEPARTMENT SECTION */
 .service{
   margin-bottom: 40px;
