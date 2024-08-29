@@ -357,7 +357,7 @@ section {
     margin-bottom: 10px; /* Ensure proper spacing */
   }
   .workshop .author {
-    margin-bottom: 60px; /* Reduce margin for mobile */
+    margin-bottom: 20px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
@@ -367,6 +367,6 @@ section {
     width: 100%; /* Adjust width to fit content */
     text-align: left; /* Ensure text alignment */
     display: block; /* Use block display for simpler layout */
-
+    gap: 0;
   }
 }
