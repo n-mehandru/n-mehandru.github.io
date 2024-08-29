@@ -349,6 +349,8 @@ section {
   .workshop {
     padding: 15px; /* Adjust padding for mobile */
     margin-bottom: 10px; /* Adjust bottom margin for mobile */
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -357,7 +359,7 @@ section {
     margin-bottom: 10px; /* Ensure proper spacing */
   }
   .workshop .author {
-    margin-bottom: 60px; /* Reduce margin for mobile */
+    margin-bottom: 20px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
