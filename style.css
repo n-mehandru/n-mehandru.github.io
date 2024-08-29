@@ -347,3 +347,11 @@ section {
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
 }
+/* MOBILE: WORKSHOPS */
+@media(max-width: 850px) {
+  .workshop {
+    padding: 15px; /* Adjust padding for mobile */
+    margin-bottom: 20px; /* Adjust bottom margin for mobile */
+  }
+}
+
