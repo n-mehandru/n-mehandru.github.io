@@ -339,8 +339,8 @@ section {
 /* CONTAINERS */
 .container {
   max-width: 850px; /* Set max width for the container */
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add padding inside the container */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Add padding inside the container */
 }
 
 
@@ -364,7 +364,7 @@ section {
 
   .workshop .citation {
     position: static; /* Change to static for mobile view */
-    margin-top: 0; /* Remove any additional margin */
+    margin-top: 10px; /* Remove any additional margin */
     padding: 0; /* Remove extra padding */
     width: 100%; /* Adjust width to fit content */
     text-align: left; /* Ensure text alignment */
