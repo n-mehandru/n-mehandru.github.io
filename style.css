@@ -303,6 +303,9 @@ section hr {
   text-align: left; 
   margin-top: 0; /* No top margin */
   padding: 0; /* No extra padding */
+  display: flex; /* Use flexbox to manage layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 5px; /* Space between lines */
 }
 
 
@@ -310,7 +313,6 @@ section hr {
 .workshop-links {
   display: flex;
 }
-
 
 .workshop-links li {
     margin-right: 6px;
@@ -336,7 +338,7 @@ section {
 
 /* CONTAINERS */
 .container {
-  max-width: 1200px; /* Set max width for the container */
+  max-width: 850px; /* Set max width for the container */
   margin: 0 auto; /* Center the container */
   padding: 0 20px; /* Add padding inside the container */
 }
@@ -354,6 +356,7 @@ section {
   }
 
   .workshop .citation {
-    margin-top: 0; /* Remove margin-top to reduce gap */
+    margin-top: 0;
+    padding: 0; / /* Remove margin-top to reduce gap */
   }
 }
