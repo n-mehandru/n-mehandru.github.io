@@ -320,7 +320,8 @@ section hr {
   
 .workshop .citation i {
   display: block; /* Ensure each <i> element appears on its own line */
-/* DEPARTMENT SECTION */
+
+  /* DEPARTMENT SECTION */
 .service{
   margin-bottom: 40px;
 }
