@@ -351,6 +351,11 @@ section {
     margin-bottom: 10px; /* Adjust bottom margin for mobile */
   }
 
+
+  .workshop .title {
+    font-size: 16px; /* Adjust font size if necessary */
+    margin-bottom: 10px; /* Ensure proper spacing */
+  }
   .workshop .author {
     margin-bottom: 60px; /* Reduce margin for mobile */
   }
@@ -359,8 +364,9 @@ section {
     position: static; /* Change to static for mobile view */
     margin-top: 0; /* Remove any additional margin */
     padding: 0; /* Remove extra padding */
-    width: auto; /* Adjust width to fit content */
+    width: 100%; /* Adjust width to fit content */
     text-align: left; /* Ensure text alignment */
     display: block; /* Use block display for simpler layout */
+
   }
 }
