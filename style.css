@@ -203,24 +203,48 @@ section hr {
 /* PUBLICATIONS */
 
 
-.publication {
-  margin-bottom: 30px;
+.publications-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns children (publications) to the right */
+  flex-wrap: wrap; /* Allows publications to wrap if there is not enough space */
 }
+
+.publication {
+  position: relative; /* Create a positioning context for absolute positioning */
+  margin-bottom: 30px;
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff; /* Optional: add background color */
+  border: 1px solid #ddd; /* Optional: add border for visual separation */
+  border-radius: 8px; /* Optional: add rounded corners */
+  /* Ensure publications take full width available */
+  width: 100%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
 .publication .title {
   font-weight: bold;
   font-size: 18px; /* Reduced font size for title */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .publication .author {
   font-size: 16px; /* Reduced font size for author */
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .publication .citation {
-  margin-bottom: 5px;
+  font-style: italic;
+  color: #000; 
+  right: 20px; /* Align citation to the right edge */
+  bottom: 20px; /* Space from the bottom */
+  padding-right: 10px; 
+  width: calc(100% - 40px);/* Optional: add padding to ensure spacing from the edge */
+  text-align: left; 
+  display: flex; /* Use flexbox to manage layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 5px; /* Space between lines */
 }
-
 
 /* Remove bullets from publication links */
 .publication-links {
@@ -233,26 +257,55 @@ section hr {
   margin-right: 6px;
 }
 
+.publication .citation i {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.publication .citation b {
+  font-style: normal; /* Overrides any inherited italic style */
+}
 
 /* WORKSHOPS */
+
 .workshop {
+  position: relative; /* Create a positioning context similar to publication */
+  color: #000; 
   margin-bottom: 30px;
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  width: 100%; /* Ensure workshops take full width available */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
+
+
 .workshop .title {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .workshop .author {
   font-size: 16px; /* Reduced font size for author */
-  margin-bottom: 5px;
+  margin-bottom: 65px;
     
 }
 
 .workshop .citation {
-  margin-bottom: 5px;
+  font-style: italic;
+  color: #000; 
+  position: absolute;  /* Position citation absolutely within the workshop container */
+  left : 20px;
+  bottom: 20px; /* Space from the bottom */
+  padding-right: 10px; /* Ensure spacing from the right edge */
+  width: calc(100% - 40px); /* Adjust width to fit within the container */
+  text-align: left; 
+  margin-top: 0; /* No top margin */
+  padding: 0; /* No extra padding */
 }
+
+
 
 .workshop-links {
   display: flex;
@@ -263,6 +316,8 @@ section hr {
     margin-right: 6px;
 }
   
+.workshop .citation i {
+  display: block; /* Ensure each <i> element appears on its own line */
 /* DEPARTMENT SECTION */
 .service{
   margin-bottom: 40px;
@@ -278,3 +333,17 @@ section {
   font-weight: bold;
 }
 
+
+/* CONTAINERS */
+.container {
+  max-width: 1200px; /* Set max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding inside the container */
+}
+
+/* MOBILE: CONTAINERS */
+@media(max-width: 850px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
