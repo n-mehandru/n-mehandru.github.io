@@ -295,7 +295,7 @@ section hr {
 .workshop .citation {
   font-style: italic;
   color: #000; 
-  position: absolute;  /* Position citation absolutely within the workshop container */
+  position: relative;  /* Position citation absolutely within the workshop container */
   left : 20px;
   bottom: 20px; /* Space from the bottom */
   padding-right: 10px; /* Ensure spacing from the right edge */
@@ -354,4 +354,3 @@ section {
     margin-bottom: 20px; /* Adjust bottom margin for mobile */
   }
 }
-
