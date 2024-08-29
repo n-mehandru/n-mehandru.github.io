@@ -356,7 +356,7 @@ section {
   }
 
   .workshop .citation {
-    margin-top: 0;
+    margin-top: 10;
     padding: 0; / /* Remove margin-top to reduce gap */
   }
 }
