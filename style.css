@@ -346,11 +346,11 @@ section {
 @media(max-width: 850px) {
   .workshop {
     padding: 15px; /* Adjust padding for mobile */
-    margin-bottom: 10px; /* Adjust bottom margin for mobile */
+    margin-bottom: 5px; /* Adjust bottom margin for mobile */
   }
 
   .workshop .author {
-    margin-bottom: 10px; /* Reduce margin for mobile */
+    margin-bottom: 5px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
