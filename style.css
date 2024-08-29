@@ -341,16 +341,19 @@ section {
   padding: 0 20px; /* Add padding inside the container */
 }
 
-/* MOBILE: CONTAINERS */
-@media(max-width: 850px) {
-  .container {
-    padding: 0 10px; /* Adjust padding for smaller screens */
-  }
-}
+
 /* MOBILE: WORKSHOPS */
 @media(max-width: 850px) {
   .workshop {
     padding: 15px; /* Adjust padding for mobile */
     margin-bottom: 20px; /* Adjust bottom margin for mobile */
+  }
+
+  .workshop .author {
+    margin-bottom: 10px; /* Reduce margin for mobile */
+  }
+
+  .workshop .citation {
+    margin-top: 0; /* Remove margin-top to reduce gap */
   }
 }
