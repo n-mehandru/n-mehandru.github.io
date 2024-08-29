@@ -352,7 +352,7 @@ section {
   }
 
   .workshop .author {
-    margin-bottom: 10px; /* Reduce margin for mobile */
+    margin-bottom: 60px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
