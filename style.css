@@ -350,6 +350,7 @@ section {
     padding: 15px; /* Adjust padding for mobile */
     margin-bottom: 10px; /* Adjust bottom margin for mobile */
     display: flex;
+    position: relative; 
     flex-direction: column;
   }
 
