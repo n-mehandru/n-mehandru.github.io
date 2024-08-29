@@ -288,14 +288,13 @@ section hr {
 
 .workshop .author {
   font-size: 16px; /* Reduced font size for author */
-  margin-bottom: 65px;
+  margin-bottom: 20px;
     
 }
 
 .workshop .citation {
   font-style: italic;
-  color: #000; 
-  position: absolute;  /* Position citation absolutely within the workshop container */
+  color: #000;  /* Position citation absolutely within the workshop container */
   left : 20px;
   bottom: 20px; /* Space from the bottom */
   padding-right: 10px; /* Ensure spacing from the right edge */
@@ -360,7 +359,7 @@ section {
     margin-bottom: 10px; /* Ensure proper spacing */
   }
   .workshop .author {
-    margin-bottom: 60px; /* Reduce margin for mobile */
+    margin-bottom: 20px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
