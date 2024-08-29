@@ -359,7 +359,7 @@ section {
     margin-bottom: 10px; /* Ensure proper spacing */
   }
   .workshop .author {
-    margin-bottom: 20px; /* Reduce margin for mobile */
+    margin-bottom: 60px; /* Reduce margin for mobile */
   }
 
   .workshop .citation {
