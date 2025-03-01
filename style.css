@@ -33,16 +33,18 @@ ul.custom-bullets {
 /* BODY: ENTIRE PAGE */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9; /* Off-white background */
+  background-color: #ffffff; /* Off-white background */
   color: #000000; /* Black text */
 }
+
 
 /* ALL LINKS ON PAGE */
 a {
   text-decoration: none;
-  color: rgb(98, 148, 239);
+  color: rgb(0, 123, 255);
   transition: all .2s ease-in-out;
 }
+
 a:hover {
   color: rgb(24, 74, 252);
 }
@@ -149,7 +151,7 @@ main {
 .sidebar h1 {
   font-family: 'Lora', serif;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   font-size: 24.5px;
 }
 
@@ -190,9 +192,10 @@ section hr {
 /* EACH SECTION HEADER */
 .section-header {
   font-family: 'Lora', serif;
-  font-size: 31px;
+  font-size:22px;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: left;
 }
 
 .content p {
@@ -226,7 +229,10 @@ section hr {
   font-weight: bold;
   font-size: 18px; /* Reduced font size for title */
   margin-bottom: 10px;
+  color: rgb(0,123,255)
 }
+
+
 
 .publication .author {
   font-size: 16px; /* Reduced font size for author */
