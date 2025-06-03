@@ -9,44 +9,71 @@
 
 /* Reset default list style */
 ul {
-  list-style: none; /* Remove default list style */
-  padding-left: 0; /* Remove default padding */
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Custom list styling */
 ul.custom-bullets {
-  list-style-type: disc; /* Shows bullets */
-  padding-left: 20px; /* Adds space on the left side for bullets */
-  margin-bottom: 20px; /* Adds space below the list */
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
-
-
 
 /* Additional spacing for the introductory paragraph */
 .content p:first-of-type {
-  margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 22px;
 }
 
+.pub-toggle {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
 
+.pub-button {
+  font-family: 'Poppins', sans-serif;
+  font-size:24px;
+  padding: 9px 16px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color: #0073e6;
+}
 
+.pub-button:hover {
+  background-color: #f0f8ff;
+}
+
+.pub-button.active {
+  background-color: black;
+  color: white;
+}
+
+.pub-list {
+  margin-top: 20px;
+}
 
 /* BODY: ENTIRE PAGE */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff; /* Off-white background */
-  color: #000000; /* Black text */
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
 }
-
 
 /* ALL LINKS ON PAGE */
 a {
   text-decoration: none;
-  color: rgb(0, 123, 255);
+  color: #007bff; /* Consistent blue color - same as publication titles */
   transition: all .2s ease-in-out;
 }
 
 a:hover {
-  color: rgb(24, 74, 252);
+  color: #0056b3; 
 }
 
 /* ICONS */
@@ -60,7 +87,6 @@ i {
 .fas.fa-fw.fa-graduation-cap {
   text-align: left;
 }
-
 .fab.fa-fw.fa-github {
   color: #171516;
   text-align: left;
@@ -71,34 +97,21 @@ i {
 }
 
 /* CONTAINERS */
-.container  {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .flex-container {
   display: flex;
 }
 
 /* MOBILE: CONTAINERS */
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .flex-container {
     flex-direction: column;
   }
-}
-
-/* NAVBAR (COMMENTED OUT IN HTML) */
-.nav-container {
-  padding: 0;
-}
-.nav-container ul {
-  display: flex;
-  margin-bottom: 40px;
-}
-.nav-container li {
-  padding-right: 16px;
 }
 
 /* SIDEBAR / MAIN */
@@ -116,7 +129,7 @@ main {
 }
 
 /* MOBILE: SIDEBAR / MAIN */
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .sidebar {
     min-height: unset;
     width: 100%;
@@ -135,12 +148,12 @@ main {
 
 /* HEADSHOT IMAGE */
 .headshot {
-  width:220px;
+  width: 220px;
   height: 250px;
 }
 
 /* MOBILE: HEADSHOT IMAGE */
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .headshot {
     width: unset;
     height: 300px;
@@ -152,11 +165,11 @@ main {
   font-family: 'Lora', serif;
   text-align: left;
   padding-bottom: 24px;
-  font-size: 24.5px;
+  font-size: 23px;
 }
 
 /* MOBILE: NAME UNDER IMAGE */
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .sidebar h1 {
     padding-top: 20px;
   }
@@ -166,9 +179,11 @@ main {
 .sidebar p {
   text-align: left;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 .sidebar li {
   padding: 6px 0;
+  font-size: 18px;
 }
 .sidebar a {
   color: #333;
@@ -178,13 +193,12 @@ main {
   color: black;
 }
 
-
 /* EACH SECTION BOTTOM SPACING */
 section {
   margin-bottom: 40px;
 }
 
-/* HOROZONTAL RULE */
+/* HORIZONTAL RULE */
 section hr {
   margin-top: 40px;
 }
@@ -192,7 +206,7 @@ section hr {
 /* EACH SECTION HEADER */
 .section-header {
   font-family: 'Lora', serif;
-  font-size:22px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-weight: bold;
   text-align: left;
@@ -201,133 +215,81 @@ section hr {
 .content p {
   margin-bottom: 20px;
   font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
 }
 
 /* PUBLICATIONS */
+#publications .section-header {
+  color: black;
+  font-size: 28px;
+}
 
-
-.publications-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns children (publications) to the right */
-  flex-wrap: wrap; /* Allows publications to wrap if there is not enough space */
+#publications .pub-toggle .pub-button {
+  font-size: 16px;
+  padding: 9px 16px;
 }
 
 .publication {
-  position: relative; /* Create a positioning context for absolute positioning */
+  position: relative;
   margin-bottom: 30px;
-  padding: 20px; /* Add padding for spacing */
-  background-color: #fff; /* Optional: add background color */
-  border: 1px solid #ddd; /* Optional: add border for visual separation */
-  border-radius: 8px; /* Optional: add rounded corners */
-  /* Ensure publications take full width available */
-  width: 100%; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .publication .title {
-  font-weight: bold;
-  font-size: 18px; /* Reduced font size for title */
+  font-size: 18px; /* This controls the publication title font size */
+  margin-bottom: 6px;
+  color: #007bff; /* Consistent blue color */
+}
+
+.publication .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication .title a:hover {
+  text-decoration: underline;
+}
+
+.publication .authors {
+  font-size: 16px;
+  color: #333;
   margin-bottom: 10px;
-  color: rgb(0,123,255)
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
-.publication .author {
-  font-size: 16px; /* Reduced font size for author */
-  margin-bottom: 15px;
-}
-
-.publication .citation {
+.publication .year-publication {
   font-style: italic;
-  color: #000; 
-  right: 20px; /* Align citation to the right edge */
-  bottom: 20px; /* Space from the bottom */
-  padding-right: 10px; 
-  width: calc(100% - 40px);/* Optional: add padding to ensure spacing from the edge */
-  text-align: left; 
-  display: flex; /* Use flexbox to manage layout */
-  flex-direction: column; /* Stack items vertically */
-  gap: 5px; /* Space between lines */
+  color: #000;
+  margin-top: 10px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Remove bullets from publication links */
+.year-publication .non-italic-link {
+  font-style: normal;
+}
+
 .publication-links {
-  list-style: none; /* Removes bullets */
-  padding-left: 0; /* Removes padding */
-  display: flex; /* Optional: if you want them to be in a row */
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-top: 8px;
 }
 
 .publication-links li {
   margin-right: 6px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
 }
 
-.publication .citation i {
-  margin-bottom: 10px; /* Adjust as needed */
-}
-
-.publication .citation b {
-  font-style: normal; /* Overrides any inherited italic style */
-}
-
-/* WORKSHOPS */
-
-.workshop {
-  position: relative; /* Create a positioning context similar to publication */
-  color: #000; 
-  margin-bottom: 30px;
-  padding: 20px; /* Add padding for spacing */
-  background-color: #fff; /* White background */
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 8px; /* Rounded corners */
-  width: 100%; /* Ensure workshops take full width available */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
-}
-
-
-.workshop .title {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.workshop .author {
-  font-size: 16px; /* Reduced font size for author */
-  margin-bottom: 20px;
-    
-}
-
-.workshop .citation {
-  font-style: italic;
-  color: #000;  /* Position citation absolutely within the workshop container */
-  left : 20px;
-  bottom: 20px; /* Space from the bottom */
-  padding-right: 10px; /* Ensure spacing from the right edge */
-  width: calc(100% - 40px); /* Adjust width to fit within the container */
-  text-align: left; 
-  margin-top: 0; /* No top margin */
-  padding: 0; /* No extra padding */
-  display: flex; /* Use flexbox to manage layout */
-  flex-direction: column; /* Stack items vertically */
-  gap: 5px; /* Space between lines */
-}
-
-
-
-.workshop-links {
-  display: flex;
-}
-
-.workshop-links li {
-    margin-right: 6px;
-}
-  
-.workshop .citation i {
-  display: block; /* Ensure each <i> element appears on its own line */
-
-  /* DEPARTMENT SECTION */
-.service{
+/* DEPARTMENT SECTION */
+.service {
   margin-bottom: 40px;
 }
 
@@ -336,46 +298,5 @@ section {
 }
 
 .section-header {
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-
-/* CONTAINERS */
-.container {
-  max-width: 850px; /* Set max width for the container */
-  margin: auto; /* Center the container */
-  padding: 20px; /* Add padding inside the container */
-}
-
-
-/* MOBILE: WORKSHOPS */
-@media(max-width: 850px) {
-  .workshop {
-    padding: 15px; /* Adjust padding for mobile */
-    margin-bottom: 10px; /* Adjust bottom margin for mobile */
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-  }
-
-
-  .workshop .title {
-    font-size: 16px; /* Adjust font size if necessary */
-    margin-bottom: 10px; /* Ensure proper spacing */
-  }
-  .workshop .author {
-    margin-bottom: 60px; /* Reduce margin for mobile */
-  }
-
-  .workshop .citation {
-    position: static; /* Change to static for mobile view */
-    margin-top: 10px; /* Remove any additional margin */
-    padding: 0; /* Remove extra padding */
-    width: 100%; /* Adjust width to fit content */
-    text-align: left; /* Ensure text alignment */
-    display: block; /* Use block display for simpler layout */
-    gap: 0;
-  }
+  font-size: 24px;
 }
