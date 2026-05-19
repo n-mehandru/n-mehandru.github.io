@@ -24,34 +24,6 @@ ul.custom-bullets {
 .content p:first-of-type {
   margin-bottom: 22px;
 }
-
-.pub-toggle {
-  margin-left: auto;
-  display: flex;
-  gap: 10px;
-}
-
-.pub-button {
-  font-family: 'Poppins', sans-serif;
-  font-size:24px;
-  padding: 9px 16px;
-  border: 2px solid black;
-  border-radius: 6px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  transition: background-color 0.3s, color: #0073e6;
-}
-
-.pub-button:hover {
-  background-color: #f0f8ff;
-}
-
-.pub-button.active {
-  background-color: black;
-  color: white;
-}
-
 .pub-list {
   margin-top: 20px;
 }
@@ -225,49 +197,59 @@ section hr {
   font-size: 28px;
 }
 
-#publications .pub-toggle .pub-button {
-  font-size: 16px;
-  padding: 9px 16px;
+.publication {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 0 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
-.publication {
-  position: relative;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.venue {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 2px;
 }
+
+
+.publication .title,
+.publication .authors,
+.publication .year-publication {
+  grid-column: 2;
+}
+
+.venue {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 
 .publication .title {
-  font-size: 18px; /* This controls the publication title font size */
+  font-size: 16px;
   margin-bottom: 6px;
-  color: #007bff; /* Consistent blue color */
+  color: #007bff;
 }
 
-.publication .title a {
-  color: inherit;
-  text-decoration: none;
-}
+
+
 
 .publication .title a:hover {
+  color: #007bff;
   text-decoration: underline;
 }
 
 .publication .authors {
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
+  margin-top: 0;
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.publication .year-publication {
-  font-style: italic;
-  color: #000;
-  margin-top: 10px;
-  font-size: 1em;
   font-family: 'Poppins', sans-serif;
 }
 
