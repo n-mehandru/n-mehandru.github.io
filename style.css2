@@ -1,0 +1,277 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-bullets {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+i {
+  min-width: 25px;
+}
+
+.fab.fa-fw.fa-twitter-square,
+.fab.fa-fw.fa-linkedin {
+  color: #007bb6;
+  text-align: left;
+}
+
+.fas.fa-fw.fa-graduation-cap {
+  text-align: left;
+}
+
+.fab.fa-fw.fa-github {
+  color: #171516;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.sidebar {
+  min-height: 100vh;
+  width: 20%;
+  padding: 80px 20px;
+  position: fixed;
+}
+
+main {
+  min-height: 100vh;
+  width: 80%;
+  padding: 80px 60px;
+  margin-left: 25%;
+}
+
+.headshot {
+  width: 220px;
+  height: 250px;
+}
+
+.sidebar h1 {
+  font-family: 'Lora', serif;
+  text-align: left;
+  padding-bottom: 24px;
+  font-size: 23px;
+}
+
+.sidebar p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar li {
+  padding: 6px 0;
+  font-size: 18px;
+}
+
+.sidebar a {
+  color: #333;
+  transition: all .2s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: black;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section hr {
+  margin-top: 40px;
+}
+
+.section-header {
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+.content p:first-of-type {
+  margin-bottom: 22px;
+}
+
+.pub-list {
+  margin-top: 20px;
+}
+
+/* PUBLICATIONS */
+#publications .section-header {
+  color: black;
+  font-size: 28px;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 0 20px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.venue {
+  grid-column: 1;
+  grid-row: 1;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+.publication .title,
+.publication .authors,
+.publication .year-publication {
+  grid-column: 2;
+}
+
+.publication .title {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #007bff;
+}
+
+.publication .title a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+.publication .authors {
+  font-size: 15px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.note,
+.publication .note,
+.publication .authors .note {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px !important;
+  color: #666 !important;
+  line-height: 1.3 !important;
+}
+
+.note em {
+  font-style: italic;
+  font-weight: 400;
+}
+.year-publication .non-italic-link {
+  font-style: normal;
+}
+
+.publication-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-top: 8px;
+}
+
+.publication-links li {
+  margin-right: 6px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SERVICE */
+.service {
+  margin-bottom: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    min-height: unset;
+    width: 100%;
+    position: static;
+    padding: 60px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px 40px;
+    margin-left: 0;
+  }
+
+  .headshot {
+    width: unset;
+    height: 300px;
+  }
+
+  .sidebar h1 {
+    padding-top: 20px;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 4px 0;
+  }
+
+  .venue {
+    grid-column: 1;
+    grid-row: auto;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .publication .title,
+  .publication .authors,
+  .publication .year-publication {
+    grid-column: 1;
+  }
+}
